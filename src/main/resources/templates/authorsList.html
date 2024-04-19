@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors</title>
+</head>
+<body>
+<h1>S'inscrire</h1>
+<form th:action="@{/authors/add}" th:object="${newAuthor}" method="post">
+    <label for="fname">Prenom</label>
+    <input id="fname" type="text" th:field="*{fname}">
+    <label for="lname">Nom</label>
+    <input id="lname" type="date" th:field="*{lname}">
+    <label for ="email"> Email</label>
+    <input id ="email" type="text" th:field="*{email}">
+    <label for ="password">Password</label>
+    <input id="password" type="text" th:field="*{password}">
+
+
+    <button type="submit">Ajouter</button>
+</form>
+<h2>Se connecter</h2>
+<form th:action="@{authors/signin}"th:objet="${}"
+</body>
+</html>
